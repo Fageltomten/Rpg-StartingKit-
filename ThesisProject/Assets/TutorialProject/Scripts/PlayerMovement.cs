@@ -12,6 +12,8 @@ public class PlayerMovement : MonoBehaviour
 
     MovementType currentMovementType;
 
+    Animator animator;
+
     [Header("Walking")]
     [SerializeField] float movementSpeed;
     [SerializeField] float crouchSpeed;
@@ -25,6 +27,7 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         characterRB = GetComponent<Rigidbody>();
+        animator = GetComponent<Animator>();
         currentMovementType = MovementType.Walk;
     }
 
@@ -69,11 +72,13 @@ public class PlayerMovement : MonoBehaviour
     {
         Vector2 takenInput = input.Get<Vector2>();
         movementInput = new Vector3(takenInput.x, 0, takenInput.y);
+        animator.SetBool("isMoving", true);
     }
 
     private void OnMovementStop(InputValue input)
     {
         movementInput = Vector3.zero;
+        animator.SetBool("isMoving", false);
     }
 
     private void OnJump(InputValue input)
