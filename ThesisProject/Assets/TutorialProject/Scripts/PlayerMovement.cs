@@ -18,6 +18,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float movementSpeed;
     [SerializeField] float crouchSpeed;
     [SerializeField] float runSpeed;
+    [SerializeField] ParticleSystem walkEffect;
 
     [Header("Jump")]
     [SerializeField] float jumpForce;
@@ -73,12 +74,14 @@ public class PlayerMovement : MonoBehaviour
         Vector2 takenInput = input.Get<Vector2>();
         movementInput = new Vector3(takenInput.x, 0, takenInput.y);
         animator.SetBool("isMoving", true);
+        walkEffect.Play();
     }
 
     private void OnMovementStop(InputValue input)
     {
         movementInput = Vector3.zero;
         animator.SetBool("isMoving", false);
+        walkEffect.Stop();
     }
 
     private void OnJump(InputValue input)
