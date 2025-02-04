@@ -12,6 +12,9 @@ public class PlayerLook : MonoBehaviour
     float mouseY;
 
 
+    public float MouseSensitivity {  get { return mouseSensitivity; } set { mouseSensitivity = value; } }
+
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
