@@ -6,6 +6,10 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Starting scene.unity
-    guid: b45cf0d86f0f9874ab0f22ad267bb6f8
+    path: Assets/TutorialProject/Scenes/MainMenu.unity
+    guid: 3a8d643185b972644bcc63a74b3b0f58
+  - enabled: 1
+    path: Assets/TutorialProject/Scenes/S_PlayerMovement.unity
+    guid: 6cedbb675d16f184ea886d072d3bd085
   m_configObjects: {}
+  m_UseUCBPForAssetBundles: 0
