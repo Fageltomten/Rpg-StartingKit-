@@ -1,3 +1,15 @@
+Utökad av Carl Åslund
+
+Öppna /TutorialProject/Scenes/MainMenu.Unity för att se det jag gjort i projektet, alla features är i playermovement.unity
+Följt tutarialsen till och med partiklarna.
+Egna saker / challange yourself:
+1. Jump [Space] - Sprint [Left-Shift] - Crouch [Left-Control] - Falls Correctly - Doesn't walk faster diagonally
+4. Main Menu
+5. Different Dialogue Types (Looping, Clamp, Random)
+7. Flaming Sword - Step Particles when moving
+
+
+
 // this is work in progress
 
 
