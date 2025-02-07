@@ -6897,7 +6897,7 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 561414549}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 9168553ac644d5541b3b53693b2fbda5, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -13926,7 +13926,7 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1055046403}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 9168553ac644d5541b3b53693b2fbda5, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -14196,10 +14196,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1622326808165244204, guid: fcd332ab5d878d34cb4e74aa1fe7fe61, type: 3}
-      propertyPath: OutputAudioMixerGroup
-      value: 
-      objectReference: {fileID: 2120812498584534897, guid: 1bd40b00f741b754896f0d9f2651ab96, type: 2}
     - target: {fileID: 2805030322442587799, guid: fcd332ab5d878d34cb4e74aa1fe7fe61, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.3400806
@@ -18917,7 +18913,7 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1407132237}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 9168553ac644d5541b3b53693b2fbda5, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
