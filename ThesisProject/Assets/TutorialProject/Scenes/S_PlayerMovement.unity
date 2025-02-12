@@ -14196,10 +14196,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1674968914823873667, guid: fcd332ab5d878d34cb4e74aa1fe7fe61, type: 3}
-      propertyPath: m_Material
-      value: 
-      objectReference: {fileID: 13400000, guid: 9168553ac644d5541b3b53693b2fbda5, type: 2}
+    - target: {fileID: 630936519237405739, guid: fcd332ab5d878d34cb4e74aa1fe7fe61, type: 3}
+      propertyPath: ShapeModule.enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2805030322442587799, guid: fcd332ab5d878d34cb4e74aa1fe7fe61, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.3400806
@@ -14240,6 +14240,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6721498933429411230, guid: fcd332ab5d878d34cb4e74aa1fe7fe61, type: 3}
+      propertyPath: cameraMaxAngle
+      value: 75
+      objectReference: {fileID: 0}
+    - target: {fileID: 6721498933429411230, guid: fcd332ab5d878d34cb4e74aa1fe7fe61, type: 3}
+      propertyPath: cameraMinAngle
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 7429307622220707858, guid: fcd332ab5d878d34cb4e74aa1fe7fe61, type: 3}
+      propertyPath: UVModule.mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7429307622220707858, guid: fcd332ab5d878d34cb4e74aa1fe7fe61, type: 3}
+      propertyPath: UVModule.enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7429307622220707858, guid: fcd332ab5d878d34cb4e74aa1fe7fe61, type: 3}
+      propertyPath: UVModule.sprites.Array.data[0].sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: bfd62ce7e6ffc7d468f2f1293c9fa606, type: 3}
     - target: {fileID: 9050557809827418289, guid: fcd332ab5d878d34cb4e74aa1fe7fe61, type: 3}
       propertyPath: m_Name
       value: S_PlayerCharacterPrefab

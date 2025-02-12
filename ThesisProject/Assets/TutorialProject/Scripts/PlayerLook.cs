@@ -11,6 +11,9 @@ public class PlayerLook : MonoBehaviour
     float mouseX;
     float mouseY;
 
+    [SerializeField] int cameraMaxAngle;
+    [SerializeField] int cameraMinAngle;
+
 
     public float MouseSensitivity {  get { return mouseSensitivity; } set { mouseSensitivity = value; } }
 
@@ -20,6 +23,8 @@ public class PlayerLook : MonoBehaviour
     {
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
+        xRotation = 0;
+        yRotation = 0;
     }
 
     // Update is called once per frame
@@ -30,6 +35,15 @@ public class PlayerLook : MonoBehaviour
 
         xRotation -= mouseYMovement;
         yRotation += mouseXMovement;
+
+        if (xRotation > cameraMaxAngle)
+        {
+            xRotation = cameraMaxAngle;
+        }
+        if (xRotation < cameraMinAngle)
+        {
+            xRotation = cameraMinAngle;
+        }
 
         transform.rotation = Quaternion.Euler(0, yRotation, 0);
         playerCamera.rotation = Quaternion.Euler(xRotation, yRotation, 0);
